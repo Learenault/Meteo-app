@@ -1,0 +1,47 @@
+.green{
+    background-color: aquamarine;
+}
+#app{
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;}
+
+.Rains{
+  background-image: url(pluie.jpeg);
+}
+.Clear{
+  background-image: url(soleil.jpeg);
+}
+.neige{
+  background-image: url(neige.jpeg);
+}
+.Clouds{
+  background-image: url(nuage.png);
+}
+#searchInput {
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    color: black;
+    width: 75%;
+    box-shadow: 0 2px 0 0px rgb(0 0 0 / 72%);
+  }
+
+#temps{
+  font-size: 50px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: rgba(0, 0, 0, 0.728);
+  border-bottom: groove;
+  background-color: rgba(255, 253, 253, 0.776);
+  text-shadow: 0 2px 0px rgb(0 0 0 / 89%);
+}
+
+.destinationInfo {
+  color: white;
+  font-size: 25px;
+  text-shadow: 4px 0 6px black;
+}
