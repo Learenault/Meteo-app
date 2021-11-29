@@ -3,9 +3,13 @@ let degres = document.getElementById("degres");
 let app = document.getElementById("app");
 let temps = document.getElementById("temps");
 let submit = document.getElementById("submit");
+let date = document.getElementById("date");
+let heure = document.getElementById("heure");
 let destination = document.getElementById('destination');
-let tableau = ["Rains","Clear","Clouds","neige"];
 let resultatsAPI;
+const tableau = ["Rains","Clear","Clouds","neige"];
+const tab_jour = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+const tab_mois= ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 
  appelApi = () => {
      if(app.classList.contains(temps.innerHTML)){
@@ -26,15 +30,18 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&units=metric&a
 
 })
 };
+ 
+UpdateDate = () => {
+    let dates = new Date();
+date.innerHTML = tab_jour[dates.getDay()]+ " "+ dates.getDate()+ " " + tab_mois[dates.getMonth()] + " " + dates.getFullYear();
+heure.innerHTML = "à " + dates.getHours() + "h " + dates.getMinutes(); 
 
-  
 
-
-
+}
 
 submit.addEventListener("click", () => {
     appelApi();
-
+    UpdateDate();
 });
 
 
