@@ -6,42 +6,70 @@
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;}
+    height: 100vh;
+  }
 
-.Rains{
-  background-image: url(pluie.jpeg);
+.Rain{
+  background-image: url(images/pluie.jpeg);
 }
 .Clear{
-  background-image: url(soleil.jpeg);
+  background-image: url(images/soleil.jpeg);
 }
-.neige{
-  background-image: url(neige.jpeg);
+.Snow{
+  background-image: url(images/neige.jpeg);
 }
 .Clouds{
-  background-image: url(nuage.png);
+  background-image: url(images/nuage.jpeg);
 }
+
 #searchInput {
     padding: 15px 20px;
     margin: 10px;
     border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-    color: black;
+    border: white;
     width: 75%;
-    box-shadow: 0 2px 0 0px rgb(0 0 0 / 72%);
+    box-shadow: 0 2px 0 0px rgb(255, 254, 254);
   }
 
-#temps{
-  font-size: 50px;
-  padding: 15px 10px;
+#submit{
+  background-color: rgb(87, 87, 87);
+  color: white;
+  padding: 10px;
+  border: none;
   border-radius: 10px;
-  border: rgba(0, 0, 0, 0.728);
+
+}
+
+
+
+.temperature{
+  font-size: 30px;
+  border-radius: 10px;
+  padding:10px;
+  border: rgba(40, 38, 38, 0.728);
   border-bottom: groove;
-  background-color: rgba(255, 253, 253, 0.776);
-  text-shadow: 0 2px 0px rgb(0 0 0 / 89%);
+  background-color: rgba(135, 135, 135, 0.563);
+  text-shadow: 4px 0 6px rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  width: 50%;
+  margin: auto;
 }
 
 .destinationInfo {
   color: white;
   font-size: 25px;
-  text-shadow: 4px 0 6px black;
+  text-shadow: 4px 0 6px rgb(7, 7, 7);
+  margin: 5px;
+
+}
+
+.destinationInfo p h1{
+  margin: 0;
+  padding: 0;
+}
+
+#degres{
+  color: white;
+  font-size: 45px;
+  text-shadow: 4px 0 6px rgb(7, 7, 7); 
 }
